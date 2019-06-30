@@ -1,0 +1,32 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+  	<servlet-name>AddHandler</servlet-name>
+  	<display-name>AddHandler</display-name>
+  	<description></description>
+  	<servlet-class>ru.constantine.servlets.AddHandler</servlet-class>
+  </servlet>
+  
+   <servlet>
+	<servlet-name>ListHandler</servlet-name>
+	<display-name>ListHandler</display-name>
+	<description></description>
+	<servlet-class>ru.constantine.servlets.ListHandler</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AddHandler</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+    
+  <servlet-mapping>
+  	<servlet-name>ListHandler</servlet-name>
+  	<url-pattern>/list</url-pattern>
+  </servlet-mapping>
+
+</web-app>
